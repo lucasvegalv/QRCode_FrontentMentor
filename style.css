@@ -1,0 +1,85 @@
+/* 
+## Colors
+
+- White: hsl(0, 0%, 100%)
+- Light gray: hsl(212, 45%, 89%)
+- Grayish blue: hsl(220, 15%, 55%)
+- Dark blue: hsl(218, 44%, 22%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 15px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 400, 700
+*/
+
+:root {
+
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-lightgrey: hsl(212, 45%, 89%);
+  --clr-grayishblue: hsl(220, 15%, 55%);
+  --clr-darkblue: hsl(218, 44%, 22%);
+
+  --ff-regular: "Outfit", sans-serif;
+  ;
+
+  --fs-paragraph: 1rem;
+  --fs-subtitle: 1.5rem;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: var(--ff-regular);
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-lightgrey);
+  height: 100%;
+}
+
+.card {
+  border-radius: 2rem;
+  background-color: var(--clr-white);
+  padding: 1.125rem;
+  display: flex-column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+}
+
+.title {
+  font-size: var(--fs-subtitle);
+  font-weight: var(--fw-bold);
+}
+
+.paragraph {
+  margin: 0 auto;
+  width: 90%;
+  font-size: var(--fs-paragraph);
+  color: var(--clr-grayishblue);
+  font-weight: var(--fw-regular);
+  padding: 0 0 1rem 0;
+}
+
+.card_text {
+  width: 95%;
+  margin: 0 auto;
+}
+
+img {
+  height: 300px;
+  border-radius: inherit;
+}
